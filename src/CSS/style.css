@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --fs-body: 1.6rem;
+    --ff-body: 'Roboto', sans-serif;
+
+    --fc-first: hsla(240, 7%, 78%, 1);
+    --fc-second: hsla(0, 0%, 100%, 1);
+    --fc-third: hsla(240, 9%, 89%, 1);
+
+    --fs-first: 2.1rem;
+    --fs-second: 2.4rem;
+    --fs-third: 4.8rem;
+    --fs-fourth: 1.8rem;
+    --fs-five: 1.4rem;
+
+    --fh-first: 2.2rem;
+    --fh-third: 6rem;
+    --fh-fourth: 2.4rem;
+    --fh-five: 2.9rem;
+}
+
+body {
+    font-size: var(--fs-body);
+
+    background-color: hsl(210, 100%, 7%);
+
+    height: 100%;
+    width: 100%;
+
+    background-image: url(../assets/mountains-universe-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    overflow-x: hidden;
+
+    background-attachment: fixed;
+}
+
+body,
+button {
+    font-family: var(--ff-body);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+
+    padding: 4rem 0 4rem 7.2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+nav a {
+    text-decoration: none;
+
+    font-weight: 400;
+    font-size: var(--fs-first);
+    line-height: var(--fh-first);
+
+    color: var(--fc-first);
+
+    transition: all 0.2s;
+}
+
+a:hover {
+    font-weight: 700;
+    font-size: var(--fs-second);
+
+    color: var(--fc-second);
+}
+
+a:focus {
+     font-weight: 700;
+    font-size: var(--fs-second);
+
+    color: var(--fc-second);
+}
+
+main {
+    display: grid;
+    gap: 1.6rem;
+
+    margin: 6.3rem 0 0 10.2rem;
+
+    width: 64.8rem;
+
+}
+
+h1 {
+    font-weight: 700;
+    font-size: var(--fs-third);
+    line-height: var(--fh-third);
+
+    color: var(--fc-third);
+}
+
+p {
+    font-weight: 400;
+    font-size: var(--fs-fourth);
+    line-height: var(--fh-fourth);
+
+    color: var(--fc-third);
+
+    text-align: justify;
+}
+
+/* Page Home */
+
+.home {
+    gap: 2.4rem;
+
+    margin: 17.2rem auto 0;
+
+    text-align: center;
+
+    justify-items: center;
+}
+
+button {
+    font-weight: 700;
+    font-size: var(--fs-first);
+    line-height: var(--fh-five);
+
+    color: var(--fc-second);
+
+    background: none;
+    border: 2px solid var(--fc-second);
+    border-radius: .5rem;
+
+    width: 19.5rem;
+    height: 4.8rem;
+
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+
+    cursor: pointer;
+}
+
+button:active {
+    color: hsla(194, 97%, 31%, 1);
+
+    background: var(--fc-second);
+}
+
+
+/* Page O Universo */
+body.two {
+    background-image: url(../assets/mountains-universe02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    overflow-x: hidden;
+
+    background-attachment: fixed;
+}
+
+
+/* paga Exploração */
+
+body.three {
+    background-image: url(../assets/mountains-universe-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    overflow-x: hidden;
+
+    background-attachment: fixed;
+}
